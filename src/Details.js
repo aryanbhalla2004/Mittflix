@@ -13,7 +13,7 @@ const Details = (props) => {
     }
 
     getShow();
-  },[]);
+  },[id]);
 
   let findShow = props.watchList.find(show => show.id === parseInt(id));
   if (findShow !== undefined) {
